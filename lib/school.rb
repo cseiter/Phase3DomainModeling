@@ -1,4 +1,6 @@
 # code here!
+#sorting answer assistance
+#https://stackoverflow.com/questions/4924633/sort-items-in-a-nested-hash-by-their-values
 
 class School
 
@@ -18,5 +20,11 @@ class School
         @roster[grade_num]
     end
 
+    def sort
+        sorted = {}
+        @roster.each {|grade,students| sorted[grade] = students.sort}
+        sorted
+    
+    end
 
 end
